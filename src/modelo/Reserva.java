@@ -14,6 +14,10 @@ public class Reserva {
     private int idVuelo;
     private int idPasajero;
 
+    public Reserva() {
+        // Constructor vacío
+    }
+
     public Reserva(int idReserva, LocalDate fechaReserva, String numeroAsiento, String estadoReserva, int idVuelo, int idPasajero) {
         this.idReserva = idReserva;
         this.fechaReserva = fechaReserva;
@@ -23,55 +27,52 @@ public class Reserva {
         this.idPasajero = idPasajero;
     }
 
-    public void setIdReserva(int idReserva) {
-        this.idReserva = idReserva;
-    }
-
-    public void setFechaReserva(LocalDate fechaReserva) {
-        this.fechaReserva = fechaReserva;
-    }
-
-    public void setNumeroAsiento(String numeroAsiento) {
-        this.numeroAsiento = numeroAsiento;
-    }
-
-    public void setEstadoReserva(String estadoReserva) {
-        this.estadoReserva = estadoReserva;
-    }
-
-    public void setIdVuelo(int idVuelo) {
-        this.idVuelo = idVuelo;
-    }
-
-    public void setIdPasajero(int idPasajero) {
-        this.idPasajero = idPasajero;
-    }
-
+    // Getters y Setters
     public int getIdReserva() {
         return idReserva;
+    }
+
+    public void setIdReserva(int idReserva) {
+        this.idReserva = idReserva;
     }
 
     public LocalDate getFechaReserva() {
         return fechaReserva;
     }
 
+    public void setFechaReserva(LocalDate fechaReserva) {
+        this.fechaReserva = fechaReserva;
+    }
+
     public String getNumeroAsiento() {
         return numeroAsiento;
+    }
+
+    public void setNumeroAsiento(String numeroAsiento) {
+        this.numeroAsiento = numeroAsiento;
     }
 
     public String getEstadoReserva() {
         return estadoReserva;
     }
 
+    public void setEstadoReserva(String estadoReserva) {
+        this.estadoReserva = estadoReserva;
+    }
+
     public int getIdVuelo() {
         return idVuelo;
+    }
+
+    public void setIdVuelo(int idVuelo) {
+        this.idVuelo = idVuelo;
     }
 
     public int getIdPasajero() {
         return idPasajero;
     }
-    
-    
-    
-    
+
+    public void setIdPasajero(int idPasajero) {
+        this.idPasajero = idPasajero;
+    }
 }
